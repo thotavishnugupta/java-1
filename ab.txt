@@ -1,0 +1,27 @@
+/**
+ * @author THOTA VISHNU GUPTA
+ *
+ */
+abstract class Abstract{
+	final double pi = 3.14;
+	abstract double circleArea(double val);
+	abstract double squareArea(double val);	
+}
+class Calculation extends Abstract{
+	double circleArea(double val){
+		return pi* val*val;
+	}
+	double squareArea(double val){
+		return val*val;
+	}
+}
+
+public class Ab {
+
+	public static void main(String[] args) {
+		Calculation cal = new Calculation();
+		System.out.println("circle area\t= "+ cal.circleArea(50)); 
+		System.out.println("Square area\t= "+ cal.squareArea(50)); 
+	}
+
+}
