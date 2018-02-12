@@ -1,0 +1,31 @@
+/**
+ * @author VISHNU GUPTA THOTA
+ *
+ */
+import java.lang.*;
+class ab
+{
+    void method(int a[])throws ArrayIndexOutOfBoundsException{
+        for(int k=0;k<=a.length;k++)
+        {
+            System.out.println(a[k]);
+        }
+    }
+}
+
+public class Army {
+    public static void main(String[] arg)
+    {
+        int ar[]={5,20,30,0,100};
+        ab ob=new ab();
+        try{
+            ob.method(ar);
+        }
+       catch(ArrayIndexOutOfBoundsException e){
+           System.out.println("run time error-Array Index Out Of Bounds Exception");
+       }
+        finally{
+            System.out.println("closing the main function ");
+        }
+    }
+}
